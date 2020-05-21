@@ -8,12 +8,12 @@ import 'package:velocity_x/velocity_x.dart';
 class HeaderScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final nameWidget = "Pawan\nKumar."
+    final nameWidget = "Jaime\nHernández."
         .text
         .white
         .xl6
         .lineHeight(1)
-        .size(context.isMobile ? 15 : 20)
+        .size(context.isMobile ? 12 : 20)
         .bold
         .make()
         .shimmer();
@@ -78,7 +78,7 @@ class IntroductionWidget extends StatelessWidget {
         [
           " - Introduction".text.gray500.widest.sm.make(),
           10.heightBox,
-          "@googledevexpert for Flutter, Firebase, Dart & Web.\nPublic Speaker, Blogger, Entrepreneur & YouTuber.\nFounder of MTechViral."
+          "I am a software engineer who currently works in Santiago de Chile. \n My goal is to make a difference through creative solutions.\nI work with project teams to create website and application interfaces to facilitate and use users. \n I have had meetings with project managers, business analysts, and architects since the start of the project, \ncreating approximate models in which they are refined and spread over many iterations"
               .text
               .white
               .xl3
@@ -91,13 +91,13 @@ class IntroductionWidget extends StatelessWidget {
         ].vStack(),
         RaisedButton(
           onPressed: () {
-            launch("https://mtechviral.com");
+            launch("https://devjaime.github.io/portfolio/");
           },
           hoverColor: Vx.purple700,
           shape: Vx.roundedSm,
           color: Coolors.accentColor,
           textColor: Coolors.primaryColor,
-          child: "Visit mtechviral.com".text.make(),
+          child: "Visit PortFolio".text.make(),
         ).h(50)
       ],
       // crossAlignment: CrossAxisAlignment.center,
@@ -149,28 +149,29 @@ class SocialAccounts extends StatelessWidget {
         AntDesign.twitter,
         color: Colors.white,
       ).mdClick(() {
-        launch("https://twitter.com/imthepk");
+        launch("https://twitter.com/HsJhernandez");
       }).make(),
       20.widthBox,
       Icon(
-        AntDesign.instagram,
+        AntDesign.linkedin_square,
         color: Colors.white,
       ).mdClick(() {
-        launch("https://instagram.com/codepur_ka_superhero");
+        launch("https://www.linkedin.com/in/jhernandezsalgado/");
       }).make(),
       20.widthBox,
       Icon(
         AntDesign.youtube,
         color: Colors.white,
       ).mdClick(() {
-        launch("https://youtube.com/mtechviral");
+        launch(
+            "https://www.youtube.com/channel/UCQsrs_h91Q-baLx-n_rcdNg?view_as=subscriber");
       }).make(),
       20.widthBox,
       Icon(
         AntDesign.github,
         color: Colors.white,
       ).mdClick(() {
-        launch("https://github.com/iampawan");
+        launch("https://github.com/devjaime");
       }).make()
     ].hStack();
   }
