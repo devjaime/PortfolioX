@@ -11,9 +11,9 @@ class HeaderScreen extends StatelessWidget {
     final nameWidget = "Jaime\nHernández."
         .text
         .white
-        .xl6
+        .xl5
         .lineHeight(1)
-        .size(context.isMobile ? 12 : 20)
+        .size(context.isMobile ? 10 : 20)
         .bold
         .make()
         .shimmer();
@@ -133,7 +133,7 @@ class PictureWidget extends StatelessWidget {
       origin: Offset(context.percentWidth * 2, 0),
       transform: Matrix4.rotationY(pi),
       child: Image.asset(
-        "assets/pic.png",
+        "assets/pic4.png",
         fit: BoxFit.cover,
         height: context.percentHeight * 60,
       ),
